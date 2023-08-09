@@ -1,0 +1,361 @@
+html, body {
+  background-color: #2e2526;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "drukWide";
+  src: url('/fonts/drukwidetrial.ttf');
+}
+
+@font-face {
+  font-family: "ibmplex";
+  src: url('/fonts/ibmplex.ttf');
+}
+
+#nav-container {
+  display: none; 
+  position: absolute;
+  left: 10px; top: 80px;
+  z-index: 10;
+}
+
+.nav {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 15px;
+  height: 100%;
+}
+
+.icon {
+  align-self: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.icon-static {
+  align-self: center;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-box {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-box {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  list-style-type: none;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 #000;
+}
+
+.list-item {
+  font-family: "ibmplex";
+  font-weight: bold;
+  padding: 10px 15px;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.brand {
+  align-self: center;
+  display: block;
+  font-family: "drukWide";
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  align-self: center;
+  display: block;
+  font-family: "ibmplex";
+  font-size: 14px;
+}
+
+.block-red {
+  background-color: #FF5959;
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.block-blue {
+  background-color: #59D7FF;
+  width: 100%;
+  height: 90vh;
+  z-index: 0;
+}
+
+.carousell-container {
+  display: flex;
+  align-self: center;
+  gap: -20px;
+  z-index: 2;
+}
+
+.carousell-1 {
+  background-color: #FFF;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 #000;
+  width: 250px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.carousell-2 {
+  background-color: #FFF;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 #000;
+  width: 250px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  transform: translateY(-20px);
+  margin-left: -20px;
+}
+
+.carousell-3 {
+  background-color: #FFF;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 #000;
+  width: 250px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  transform: translateY(-40px);
+  margin-left: -20px;
+}
+
+.carousell-4 {
+  background-color: #FFF;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 0 #000;
+  width: 250px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin-left: -20px;
+  z-index: 3;
+}
+
+.carousell-image-container {
+  background-color: #D9D9D9;
+  width: 200px; height: 200px;
+  align-self: center;
+}
+
+.carousell-image {
+  width: 200px; height: 200px;
+}
+
+.carousell-title {
+  font-family: "ibmplex";
+  font-weight: bold;
+  align-self: center;
+}
+
+.carousell-description {
+  font-family: "ibmplex";
+  align-self: center;
+  text-align: center;
+}
+
+.carousell-button {
+  font-family: "ibmplex";
+  font-weight: bold;
+  background-color: #FEE333;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  align-self: center
+}
+
+@media (max-width: 1400px) {
+  .block-red {
+    background-color: #FF5959;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .carousell-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 2;
+    padding-top: 40px; padding-bottom: 40px;
+    margin-left: 30px;
+  }
+
+  .carousell-1 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px; margin-right: 20px;
+  }
+  
+  .carousell-2 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px; margin-right: 20px;
+    transform: translateY(0px);
+  }
+  
+  .carousell-3 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; margin-right: 20px;
+    transform: translateY(0px);
+  }
+  
+  .carousell-4 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .slogan {
+    display: none;
+  }
+  .block-red {
+    background-color: #FF5959;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .carousell-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    padding-top: 40px; padding-bottom: 40px;
+    margin-left: 30px;
+  }
+
+  .carousell-1 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+  }
+  
+  .carousell-2 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .carousell-3 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .carousell-4 {
+    background-color: #FFF;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 0 #000;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand {
+    display: none;
+  }
+
+  .slogan {
+    display: none;
+  }
+}
